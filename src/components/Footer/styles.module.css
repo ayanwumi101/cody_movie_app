@@ -1,0 +1,37 @@
+footer{
+    width: 100%;
+    /* margin: auto; */
+    margin-top: 100px;
+}
+
+.brand h2{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.links_container{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    margin-bottom: 15px;
+    width: 90%;
+    gap: 80px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.line{
+    width: 90%;
+    text-align: center;
+    height: 1px;
+    background-color: grey;
+}
+
+.links{
+    width: 350px;
+}

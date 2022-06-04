@@ -1,13 +1,25 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* width: 100%; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: #373737;
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+
+/* .sidenav-container, .notifications-container{
+  width: 25%;
+}
+.movies-container{
+  width: 50%;
+} */
+
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-float infinite 3s ease-in-out;
   }
@@ -36,4 +48,4 @@
   100% {
     transform: translateY(0px);
   }
-}
+} */

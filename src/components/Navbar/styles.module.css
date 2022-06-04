@@ -1,0 +1,48 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputs{
+    width: 50%;
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    background: none;
+    font-size: 20px;
+}
+
+
+.input{
+    width: 100%;
+    border: 1.8px solid rgba(211, 211, 211, 0.7);
+    padding: 12px;
+    padding-left: 38px;
+    border-radius: 17px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.178);
+    color: white;
+}
+
+.user{
+    height: 100px;
+    width: 100px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 30%;
+}
+
+.avatar{
+    width: 15%;
+    border: 2.5px solid rgb(245, 70, 70);
+    border-radius: 50%;
+}

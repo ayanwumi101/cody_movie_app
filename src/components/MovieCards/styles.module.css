@@ -1,0 +1,77 @@
+.movie_card_container{
+    width: 92%;
+}
+.section_heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.5px solid white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.icon:hover{
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.cards_container{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cards{
+    width: 170px; 
+    height: auto;
+    position: relative;
+}
+
+.image_container{
+    width: 170px;
+    height: auto;
+    z-index: -1;
+    text-align: center;
+}
+
+.card_image{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.content{
+    position: absolute;
+    top: 55%;
+    right: 23%;
+    z-index: 1;
+    background: none;
+    text-align: center;
+}
+
+.plus{
+    background-color: rgba(255, 255, 255, 0.37);
+    padding: 5px;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}

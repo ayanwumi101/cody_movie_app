@@ -1,0 +1,85 @@
+.notificationContainer{
+    width: 25%;
+    border-left: 1px solid rgba(211, 211, 211, 0.1);
+    position: fixed;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    overflow-x: hidden;
+    padding: 25px;
+}
+
+.inputs {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.icon {
+    position: absolute;
+    top: 13px;
+    background: none;
+    left: 15px;
+}
+
+.input {
+    width: 100%;
+    border: 1.8px solid rgba(211, 211, 211, 0.7);
+    padding: 10px;
+    padding-left: 38px;
+    border-radius: 17px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.178);
+    color: white;
+}
+
+.single{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 18px;
+    margin-top: 15px;
+}
+
+.image{
+    width: 65px;
+    height: auto;
+}
+
+.movie_img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.likes{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+small{
+    margin: 4px 0;
+    color: #bdbdc0;
+}
+
+.more{
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: tomato;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.808);
+}
+
+strong{
+    background: none;
+}
+
+.likes_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
