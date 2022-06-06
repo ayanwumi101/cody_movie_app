@@ -58,7 +58,7 @@ export const Featured = ({ movies }) => {
         </div>
 
         <div className={styles.title}>
-            <h1>Legend Of The Seeker</h1>
+            <h2>Legend Of The Seeker</h2>
             <small>Adventure, Comedy, Action</small>
         </div>
         

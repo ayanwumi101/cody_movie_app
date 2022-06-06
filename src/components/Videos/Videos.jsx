@@ -15,9 +15,9 @@ const Videos = () => {
           <Navbar />
 
           <div className={styles.videos}>
-              {videos.map((video) => {
+              {videos.map((video, index) => {
                   return (
-                    <div className={styles.video}>
+                    <div className={styles.video} key={index}>
                         <div className={styles.video_img}>
                             <img src={image} alt="movie-image" className={styles.video_image} />
                             <span className={styles.duration}>24:30</span>

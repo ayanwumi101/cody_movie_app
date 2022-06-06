@@ -1,0 +1,89 @@
+.login{
+    width: 100%
+}
+
+.big{
+    width: 50px;
+    height: 50px;
+}
+
+.heading{
+    text-align: center;
+    margin: auto;
+    margin-top: 15%;  
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+}
+
+form{
+    width: 40%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.inputs{
+    position: relative;
+}
+
+.last_input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+.username, .password, .submit{
+    width: 100%;
+    padding: 12px 45px;
+    margin: 8px 0;
+    border: none;
+}
+
+.username, .password{
+    background: none;
+    border-radius: 5px;
+    color: white;
+    border: 0.5px solid rgba(255, 255, 255, 0.568);
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+.icon{
+    position: absolute;
+    left: 14px;
+    top: 22px;
+}
+
+.login_icon{
+    position: absolute;
+    top: 22px;
+    left: 55%;
+}
+
+a{
+    color: white;
+}
+
+.submit{
+    background-color: rgb(197, 7, 197);
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 750px) {
+    form{
+        width: 75%;
+    }
+    .login_icon {
+        position: absolute;
+        left: 57%;
+    }
+
+}

@@ -13,11 +13,11 @@ const About = () => {
 
           <div className={styles.content}>
               <p className={styles.text}>
-                  Skudan is a family owned production company committed to delivering original contents theough strong storytelling, authenticity, commitment and passion. The company was originally founded in 2019 in the UK and now registered in Nigeria with a permanent office in Lagos State.
+                  Skudan is a family owned production company committed to delivering original contents theough strong storytelling, authenticity, commitment and passion. The company was originally founded in 2019 in the UK and now registered in Nigeria with its permanent office in Lagos State.
                 </p>
 
                 <p className={styles.text}>
-                    The co-founder is an incredibly talented writer with an eye for detail. Skudan picture is comitted to furthering the art and craft of the new Nigerian Cinema and in the process exploiting and developing the overlooked areas of the business.
+                    The co-founder is an incredibly talented writer with an eye for detail. Skudan picture is comitted to furthering the art and craft of the new Nigerian Cinema and in the process creating and developing the overlooked areas of the business.
               </p>
               
               <p className={styles.text}>

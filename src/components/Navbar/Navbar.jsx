@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './styles.module.css'
 import avatar from './image-avatar.png'
-import { BellIcon, ChatBubbleIcon, MagnifyingGlassIcon } from '@radix-ui/react-icons'
+import { BellIcon, ChatBubbleIcon, MagnifyingGlassIcon} from '@radix-ui/react-icons'
 
 const Navbar = () => {
   return (
@@ -13,8 +13,6 @@ const Navbar = () => {
           </div>
 
           <div className={styles.info}>         
-              <BellIcon />
-              <ChatBubbleIcon />
               <img src={avatar} alt="user avatar" className={ styles.avatar } />
           </div>
 

@@ -1,5 +1,7 @@
 .movie_card_container {
     width: 92%;
+    /* margin: 20px auto; */
+
 }
 
 .section_heading {
@@ -31,7 +33,7 @@
 .cards_container {
     display: flex;
     align-items: center;
-    width: 97%;
+    width: 92%;
     margin: 20px auto;
     margin-bottom: 35px;
     flex-wrap: wrap;
@@ -77,3 +79,18 @@
 }
 
 
+@media screen and (max-width: 900px) {
+    .movie_card_container{
+        width: 100%;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .cards_container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 15px;
+    }
+}

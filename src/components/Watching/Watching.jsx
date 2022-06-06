@@ -22,7 +22,7 @@ const Watching = () => {
               {cards.map((card) => {
                   return (
                       <div className={styles.cards}>
-                            <div className={styles.image_container}>
+                          <div className={styles.image_container}>
                                 <img src={image} alt="card image" className={styles.card_image} />
                           </div>
 

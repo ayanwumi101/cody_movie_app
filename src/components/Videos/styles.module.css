@@ -70,3 +70,12 @@
     align-items: center;
     gap: 5px;
 }
+
+@media screen and (max-width: 600px) {
+    .videos_container{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        z-index: -2;
+    }   
+}

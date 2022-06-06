@@ -15,10 +15,10 @@ const Footer = () => {
             
 
                 <div className={styles.links_container}>
-                    <div className="links">
+                    <div className={styles.links}>
                         <div className={styles.heading}>
                             <Link2Icon />
-                            <p>Quick Links</p>
+                            <h4>Quick Links</h4>
                         </div>
                         <ul>
                           <Link to='/about'>
@@ -40,10 +40,10 @@ const Footer = () => {
 
 
 
-                    <div className="links">
+                    <div className={styles.links}>
                         <div className={styles.heading}>
                             <ExternalLinkIcon />
-                            <p>Follow Us</p>
+                            <h4>Follow Us</h4>
                         </div>
                         <ul>
                             <li>
@@ -63,10 +63,10 @@ const Footer = () => {
                     </div>
 
 
-                  <div className="links">
+                  <div className={styles.links}>
                         <div className={styles.heading}>
                             <ExternalLinkIcon />
-                            <p>Follow Us</p>
+                            <h4>Follow Us</h4>
                         </div>
                         <ul>
                             <li>
@@ -83,7 +83,7 @@ const Footer = () => {
                             </li>
                             
                         </ul>
-                    </div>
+                  </div>
 
                 </div>
 
