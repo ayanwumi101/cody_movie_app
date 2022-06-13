@@ -24,6 +24,11 @@ footer{
     margin: 25px 0;
 }
 
+li a{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.637);
+}
+
 .line{
     width: 90%;
     text-align: center;

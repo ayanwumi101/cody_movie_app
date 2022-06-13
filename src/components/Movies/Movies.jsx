@@ -10,34 +10,35 @@ import Footer from '../Footer/Footer'
 
 
 
-const url = 'https://www.omdbapi.com/?i=tt3896198&apikey=e9dcafea'
-
-
 
 const Movies = () => {
-  const [movies, setMovies] = useState({})
 
-  // const fetchData = async() => {
-  //   try {
-  //     const response = await axios.get(url)
-  //     const data = response.data;
-  //     setMovies(data)
-  //     console.log(data);
-  //   } catch (error) {
-  //     console.log(error.response);
-  //   }
-  // }
+  const [data, setData] = useState([])
 
-  // useEffect(() => {
-  //   fetchData()
-  // }, [])
+  const fetchData = { method: 'GET', url: 'https://movies-app1.p.rapidapi.com/api/movies', params: {page: '3'} , headers: { 'X-RapidAPI-Host': 'movies-app1.p.rapidapi.com', 'X-RapidAPI-Key': 'd130ff0b5emshcba3a285810c5e6p13e348jsnedaccefbac5b' } };    
+
+
+  const fetchVideo = () => {
+        axios.request(fetchData).then(function (response) {
+        const mainData = response.data.results;
+            setData(mainData);
+        }).catch(function (error) {
+            console.error(error);
+        });
+  }
+  
+
+  useEffect(() => {
+    fetchVideo();
+  }, []);
+
 
   return (
     <div className={styles.movie}>
         <Navbar />
-        <Featured movies={movies} />
-        <MovieCard movies={movies} />
-        <Watching />
+        <Featured data={data} />
+        <MovieCard data={data} />
+        <Watching data={data} />
         <Footer />
     </div>
   )
@@ -47,19 +48,19 @@ export default Movies
 
 
 
-export const Featured = ({ movies }) => {
+export const Featured = ({ data }) => {
   return (
     
       <div className={styles.featured_movie}>
 
         <div className={styles.background}>
-            <img src={image} alt="" className={styles.background_image} />
+            <img src={data[0].image} alt="" className={styles.background_image} />
             <ChevronRightIcon className={styles.next}/>
         </div>
 
         <div className={styles.title}>
-            <h2>Legend Of The Seeker</h2>
-            <small>Adventure, Comedy, Action</small>
+            <h2>{data[0].titleOriginal}</h2>
+            <small>{data[0].genres[0].name}</small>
         </div>
         
 

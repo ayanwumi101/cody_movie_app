@@ -90,14 +90,14 @@
 
     .title{
         position: absolute;
-        top: 45%;
+        top: 41%;
         left: 13%;
         overflow-x: auto;
     }
 
     .buttons{
         position: absolute;
-        bottom: 38%;
+        bottom: 43%;
         left: 13%;
     }
 

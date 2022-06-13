@@ -111,13 +111,12 @@ li{
 .sidenav_container{
         /* width: 230px; */
         height: 100%;
-        background-color: black;
+        background-color: #373737;
         z-index: 2;
         overflow-x: hidden;
         transition: 1.5s;
-        padding: 0px 35px;
-        padding-bottom: 20px;
-        width: 30%;
+        padding: 0px 30px;
+        width: 35%;
         position: fixed;
         left: 0;
 }

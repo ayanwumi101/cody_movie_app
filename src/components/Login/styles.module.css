@@ -11,6 +11,7 @@
     text-align: center;
     margin: auto;
     margin-top: 15%;  
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -18,7 +19,7 @@
 }
 
 form{
-    width: 40%;
+    max-width: 50%;
     margin: 20px auto;
     text-align: center;
 }
@@ -62,7 +63,7 @@ form{
 .login_icon{
     position: absolute;
     top: 22px;
-    left: 55%;
+    left: 54%;
 }
 
 a{
@@ -78,8 +79,17 @@ a{
 }
 
 @media screen and (max-width: 750px) {
+    .login{
+        width: 93%;
+        margin: auto;
+        margin-top: 90px;
+    }
+
+    .heading{
+        margin: 20px auto;
+    }
     form{
-        width: 75%;
+        max-width: 88%;
     }
     .login_icon {
         position: absolute;

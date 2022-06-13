@@ -8,6 +8,11 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import About from './components/About/About';
 import Videos from './components/Videos/Videos';
 import Login from './components/Login/Login';
+import Subscribe from './components/Subscribe/Subscribe';
+import Video from './components/Video/Video';
+
+
+
 
 
 
@@ -23,9 +28,10 @@ function App() {
           <Route exact path='/about' element={<About />} />
           <Route exact path='/videos' element={<Videos />} />
           <Route exact path='/login' element={<Login />} />
+          <Route exact path='/subscribe' element={<Subscribe />} />
+          <Route exact path='/video/:id' element={<Video />} />
+
           {/* <Route exact path='/downloads' element={<Downloads />} />
-          
-          <Route exact path='/wishlist' element={<Wishlist />} />
           <Route exact path='/movies' element={<Movies />} /> */}
         </Routes>
       </Router>

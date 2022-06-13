@@ -32,7 +32,7 @@ const Sidenav = () => {
                     <nav className={styles.navigation}>
                     
                         <ul className={styles.lists}>
-                            <Link to='/'>
+                            <Link to='/dashboard'>
                                 <li>
                                     <DashboardIcon className={styles.icon} />
                                     <span>Dashboard</span>

@@ -1,11 +1,13 @@
 .navbar{
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-between; */
+    gap: 30px;
 }
 
 .inputs{
-    width: 50%;
+    width: 70%;
     position: relative;
 }
 
@@ -29,32 +31,31 @@
     color: white;
 }
 
-.user{
-    height: 100px;
-    width: 100px;
-}
 
 .info{
-    display: flex;
-    align-items: center;
-    gap: 25px;
     width: 30%;
 }
 
 .avatar{
-    width: 15%;
-    border: 2.5px solid rgb(245, 70, 70);
+    max-width: 17%;
+    border: 3px solid rgba(160, 6, 160, 0.986);
     border-radius: 50%;
 }
 
-@media screen {
+@media screen and (max-width: 700px) {
     .navbar{
+        /* position: absolute;
+        right: 0; */
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
         /* margin-left: 20px; */
     }
 
     .inputs{
-        width: 70%;
+        width: 75%;
         margin-left: 35px;
     }
 
@@ -70,14 +71,13 @@
         font-size: 20px;
     }
 
-    .avatar{
-        width: 38%;
+    .info {
+        max-width: 30%
     }
 
-    .info{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 30%
+    .avatar{
+        max-width: 40%;
     }
+
+    
 }

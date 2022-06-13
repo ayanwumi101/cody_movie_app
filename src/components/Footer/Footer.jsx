@@ -31,10 +31,12 @@ const Footer = () => {
                                 <RocketIcon />
                                 <span>Contact Us</span>
                             </li>
-                            <li>
-                                <EnvelopeClosedIcon />
-                                <span>Subscribe</span>
-                            </li>
+                          <Link to='/subscribe'>
+                                <li>
+                                    <EnvelopeClosedIcon />
+                                    <span>Subscribe</span>
+                                </li>
+                          </Link>
                         </ul>
                     </div>
 
