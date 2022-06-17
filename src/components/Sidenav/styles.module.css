@@ -18,6 +18,8 @@ a{
 .subheading{
     margin: 15px 0;
     color: #949494;
+    text-align: left;
+    float: left;
 }
  span{
     color: #bdbdc0;
@@ -45,8 +47,15 @@ li{
 }
 
 .brand{
-    margin-bottom: 25px;
+    
+    width: 130px;
+    height: 90px;
 } 
+
+.logo{
+    width: 100%;
+    height: 100px;
+}
 
 .social_links{
     display: flex;
@@ -131,6 +140,6 @@ li{
     }
 
     .sidenav_container{
-        width: 65%;
+        width: 68%;
     }
 }

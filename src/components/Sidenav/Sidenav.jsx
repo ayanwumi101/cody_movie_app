@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
 import { DownloadIcon, GearIcon, VideoIcon, DashboardIcon, EnterIcon, BookmarkIcon, PersonIcon, HeartIcon, PlayIcon, TwitterLogoIcon, InstagramLogoIcon, TextAlignLeftIcon, Cross2Icon } from '@radix-ui/react-icons'
 import styles from './styles.module.css'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useParams,  } from 'react-router-dom'
+import logo from './logo.jpg'
+
 
 
 
@@ -22,7 +24,7 @@ const Sidenav = () => {
             {location.pathname !== '/login' && (
                 <div className={styles.sidenav}>
                     <div className={styles.brand}>
-                        <h1>Netflix</h1>
+                        <img src={ logo } alt="Skudan pictures logo" className={styles.logo} />
                     </div>
 
                     <div className={styles.subheading}>
@@ -46,20 +48,26 @@ const Sidenav = () => {
                                 </li>
                             </Link>
 
-                            <li>
-                                <BookmarkIcon className={styles.icon} />
-                                <span>Bookmarks</span>
-                            </li>
+                            <Link to='/bookmarks'>
+                                <li>
+                                    <BookmarkIcon className={styles.icon} />
+                                    <span>Bookmarks</span>
+                                </li>
+                            </Link>
+                            
+                            <Link to='/wishlist'>
+                                <li>
+                                    <HeartIcon className={styles.icon} />
+                                    <span>Wishlist</span>
+                                </li>
+                            </Link>
 
-                            <li>
-                                <HeartIcon className={styles.icon} />
-                                <span>Wishlist</span>
-                            </li>
-
-                            <li>
-                                <DownloadIcon className={styles.icon} />
-                                <span>Downloads</span>
-                            </li>
+                            <Link to='/downloads'>
+                                <li>
+                                    <DownloadIcon className={styles.icon} />
+                                    <span>Downloads</span>
+                                </li>
+                            </Link>
 
                         </ul>
                     </nav>
@@ -72,10 +80,12 @@ const Sidenav = () => {
                     <nav className={styles.navigation}>
                     
                         <ul className={styles.lists}>
-                            <li>
-                                <PlayIcon className={styles.icon} />
-                                <span>Movies</span>
-                            </li>
+                            <Link to='/movies'>
+                                    <li>
+                                    <PlayIcon className={styles.icon} />
+                                    <span>Movies</span>
+                                </li>
+                            </Link>
                         
                             <li>
                                 <PersonIcon className={styles.icon} />
@@ -150,7 +160,7 @@ export const SidenavOverlay = ({setShowNav}) => {
             <div className={styles.sidenav_container} onClick={() => setShowNav(false)}>
                 <button className={styles.sidenav_btn} onClick={() => setShowNav(false)}><Cross2Icon className={styles.close_icon} /></button>
                     <div className={styles.brand}>
-                        <h1>Netflix</h1>
+                        <img src={logo} alt="Skudan pictures logo" className={styles.logo} />
                     </div>
 
                     <div className={styles.subheading}>
@@ -160,7 +170,7 @@ export const SidenavOverlay = ({setShowNav}) => {
                     <nav className={styles.navigation}>
                     
                         <ul className={styles.lists}>
-                            <Link to='/'>
+                            <Link to='/dashboard'>
                                 <li>
                                     <DashboardIcon className={styles.icon} />
                                     <span>Dashboard</span>
@@ -174,21 +184,26 @@ export const SidenavOverlay = ({setShowNav}) => {
                                 </li>
                             </Link>
 
-                            <li>
-                                <BookmarkIcon className={styles.icon} />
-                                <span>Bookmarks</span>
-                            </li>
+                            <Link to='/bookmarks'>
+                                <li>
+                                    <BookmarkIcon className={styles.icon} />
+                                    <span>Bookmarks</span>
+                                </li>
+                            </Link>
 
-                            <li>
-                                <HeartIcon className={styles.icon} />
-                                <span>Wishlist</span>
-                            </li>
-
-                            <li>
-                                <DownloadIcon className={styles.icon} />
-                                <span>Downloads</span>
-                            </li>
-
+                            <Link to='/wishlist'>
+                                <li>
+                                    <HeartIcon className={styles.icon} />
+                                    <span>Wishlist</span>
+                                </li>
+                            </Link>
+                            
+                            <Link to='/downloads'>
+                                <li>
+                                    <DownloadIcon className={styles.icon} />
+                                    <span>Downloads</span>
+                                </li>
+                            </Link>
                         </ul>
                     </nav>
 
@@ -200,10 +215,12 @@ export const SidenavOverlay = ({setShowNav}) => {
                     <nav className={styles.navigation}>
                     
                         <ul className={styles.lists}>
-                            <li>
-                                <PlayIcon className={styles.icon} />
-                                <span>Movies</span>
-                            </li>
+                            <Link to='/movies'>
+                                <li>
+                                    <PlayIcon className={styles.icon} />
+                                    <span>Movies</span>
+                                </li>
+                            </Link>
                         
                             <li>
                                 <PersonIcon className={styles.icon} />

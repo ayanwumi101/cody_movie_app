@@ -1,5 +1,5 @@
 import React from 'react'
-import Movies from '../Movies/Movies'
+import Poster from '../Posters/Poster'
 import Notifications from '../Notifications/Notifications'
 import styles from './styles.module.css'
 
@@ -9,7 +9,7 @@ const Dashboard = () => {
   return (
     
       <div className={styles.dashboard}>
-          <Movies />
+          <Poster />
           <Notifications />
       </div>
     

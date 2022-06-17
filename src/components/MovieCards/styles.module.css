@@ -33,9 +33,10 @@
     max-width: 90%;
     margin: 20px auto;
     margin-bottom: 35px;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    overflow-x: auto;
+    gap: 18px;
 }
 
 .cards{

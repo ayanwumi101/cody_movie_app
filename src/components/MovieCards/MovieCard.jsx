@@ -1,12 +1,10 @@
 import React from 'react'
 import {ChevronLeftIcon, ChevronRightIcon, PlusIcon, StarFilledIcon} from '@radix-ui/react-icons'
 import styles from './styles.module.css'
-import image from './boy.png'
+import { Link } from 'react-router-dom'
 
 
-const MovieCard = () => {
-
-    const cards = [1, 2, 3];
+const MovieCard = ({card}) => {
 
   return (
       <div className={styles.movie_card_container}>
@@ -20,22 +18,24 @@ const MovieCard = () => {
           </div>    
 
           <div className={styles.cards_container}>
-              {cards.map((card) => {
+              {card.map((cards, index) => {
                   return (
-                      <div className={styles.cards}>
-                            <div className={styles.image_container}>
-                                <img src={image} alt="card image" className={styles.card_image} />
+                      <Link to={`/video/${cards._id}`}>
+                            <div className={styles.cards} key={index}>
+                                    <div className={styles.image_container}>
+                                        <img src={cards.image} alt="card image" className={styles.card_image} />
+                                    </div>
+                                    <div className={styles.content}>
+                                        <h4>{cards.titleOriginal}</h4>
+                                        <small>{cards.release}</small>
+                                        <div className="stars">
+                                        <StarFilledIcon />
+                                        <small>{ cards.rating }</small>
+                                        </div>
+                                    </div>
+                                    <PlusIcon className={styles.plus}/>
                             </div>
-                            <div className={styles.content}>
-                                <h4>Jackie Chan</h4>
-                                <small>12+ movies</small>
-                                <div className="stars">
-                                  <StarFilledIcon />
-                                  <small>4.5</small>
-                                </div>
-                            </div>
-                            <PlusIcon className={styles.plus}/>
-                      </div>
+                      </Link>
                  )
               })}
           </div>

@@ -36,14 +36,15 @@
     width: 92%;
     margin: 20px auto;
     margin-bottom: 35px;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    overflow-x: auto;
+    gap: 18px;
 }
 
 .cards {
     width: 190px;
-    height: 192px;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.363);
     border-radius: 12px;
     text-align: left;
@@ -75,7 +76,7 @@
 }
 
 .content{
-    padding-left: 12px;
+    padding: 10px;
 }
 
 

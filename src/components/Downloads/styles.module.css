@@ -1,0 +1,42 @@
+.downloads_container{
+    width: 80%;
+    position: absolute;
+    left: 20%;
+    padding: 20px;
+    margin: 40px auto;
+}
+
+.heading{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.download_icon{
+    width: 38px;
+    height: 38px;
+}
+
+.downloads{
+    text-align: center;
+    margin-top: 80px;
+}
+
+button{
+    background: none;
+    border: none;
+    padding: 8px 18px;
+    background-color: rgba(128, 0, 128, 0.89);
+    color: white;
+    border-radius:5px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .downloads_container{
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+}

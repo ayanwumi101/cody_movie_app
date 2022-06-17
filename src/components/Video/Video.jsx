@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import styles from './styles.module.css'
-import video from './facebook_video.mp4'
 import axios from 'axios';
 
 
@@ -32,18 +31,21 @@ const Video = () => {
 
   return (
     <div className={styles.video_container}>
-      <div className={styles.video}>
-
-        <iframe src={videoUrl} style={{width: '450px', height: '350px'}}></iframe>
-        {/* <video controls >
-            <source src={source} type='video/mp4' />
-            <source src={source} type='video/ogg' />
-          </video> */}
+        <div className={styles.video}>
+          <iframe src={videoUrl}></iframe>
         </div>
 
-        <div className={styles.video_details}>
-          {/* <h2>{ data.titleOriginal }</h2>
-          <span>{data.genres[0].name}</span> */}
+        <div className={styles.details_container}>
+        {data && (
+          <div>
+             <h2>{data.titleOriginal}</h2>
+             <div className={styles.title}>
+               <span>Genre: {data.genres[0].name}</span>
+               <span>Year: { data.year}</span>
+               <span>Rating: {data.rating}</span>
+             </div>
+          </div>
+        )}
         </div>
     </div>
   )
